@@ -1,49 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects | Ocean Solar Systems</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .project-item {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .project-item:hover {
+      transform: scale(1.03);
+    }
+    .project-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .project-item p {
+      margin: 10px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
-<div class="nav">
-  <div class="logo">Ocean Solar Systems</div>
-  <div class="menu">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-    <a href="blog.html">Blog</a>
+  <h1>My Projects</h1>
+
+  <div class="projects-grid">
+    <!-- Add your projects here -->
+    <div class="project-item">
+      <img src="images/project1.jpg" alt="Project 1">
+      <p>Project 1</p>
+    </div>
+    <div class="project-item">
+      <img src="images/project2.jpg" alt="Project 2">
+      <p>Project 2</p>
+    </div>
+    <div class="project-item">
+      <img src="images/project3.jpg" alt="Project 3">
+      <p>Project 3</p>
+    </div>
+    <!-- Duplicate the above div for more projects -->
   </div>
-</div>
 
-
-<section class="section">
-<h1>Projects & Case Studies</h1>
-<p>Examples of panels we’ve built and deployed for various clients and applications.</p>
-
-<div class="grid gallery">
-<div class="card">
-<img src="images/project1.jpg" alt="Fiberglass solar panel laminated for marine vehicle">
-<p>Fiberglass panel laminated for autonomous marine research vessel. Size: 1200x600mm, 150W per panel.</p>
-</div>
-
-<div class="card">
-<img src="images/project2.jpg" alt="Custom lightweight solar panel">
-<p>Custom lightweight panels installed on off-grid cabin. Waterproof, 90W per panel.</p>
-</div>
-
-<div class="card">
-<img src="images/project3.jpg" alt="Workshop prototype solar panel">
-<p>Prototype panels for engineering project. Small-batch production for testing and validation.</p>
-</div>
-</div>
-</section>
-
-<footer>
-<p>© 2026 Ocean Solar Systems</p>
-</footer>
 </body>
 </html>
