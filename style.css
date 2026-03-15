@@ -86,6 +86,32 @@ img {
   background-color: #144060;
 }
 
+#hero {
+  text-align: center;
+  padding: 100px 20px;
+  color: white; /* text on top of image */
+  background: url('images/hero.jpg') no-repeat center center;
+  background-size: cover; /* makes the image fill the section */
+  position: relative;
+}
+
+/* Optional overlay for readability */
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* adjust opacity if needed */
+  z-index: 0;
+}
+
+/* Ensure text and button appear above overlay */
+#hero h1,
+#hero p,
+#hero .button {
+  position: relative;
+  z-index: 1;
+}
+
 /* ========================================
    Sections
 ======================================== */
