@@ -1,244 +1,140 @@
-/* ========================================
-   Global Styles
-======================================== */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sun Stitch</title>
+<link rel="stylesheet" href="style.css">
 
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #fff;
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Sun Stitch",
+  "url": "https://yourdomain.com",
+  "logo": "https://yourdomain.com/images/logo.svg",
+  "description": "Manufacturer of lightweight fiberglass solar panels for marine, autonomous, and off-grid applications."
 }
+</script>
+</head>
+<body>
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+<header class="nav">
+  <a href="#hero" class="logo"><img src="images/logo.svg" alt="Sun Stitch Logo"></a>
+  <div class="menu">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#specs">Specs</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
 
-img, video, iframe {
-  border-radius: 6px;
-  display: block;
-}
+<section id="hero">
+  <h1>Sun Stitch</h1>
+  <p>Custom fiberglass solar panels for marine, autonomous, and off-grid applications.</p>
+  <a href="#contact" class="button">Request a Quote</a>
+</section>
 
-/* ========================================
-   Navigation
-======================================== */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-}
+<section id="about">
+  <h2>About Us</h2>
+  <p>We specialize in lightweight, durable solar panels for marine vehicles, autonomous systems, and off-grid installations.  
+  Trusted supplier for Ocean Aero and other advanced projects.</p>
+</section>
 
-.nav .logo img {
-  height: 40px;
-  width: auto;
-}
+<section id="projects">
+  <h2>Our Projects</h2>
+  <div class="projects-grid">
 
-.nav .menu a {
-  margin-left: 20px;
-  font-weight: 600;
-  color: #333;
-  transition: color 0.2s;
-}
+    <div class="project-card">
+      <img src="images/project1.jpg" alt="Fiberglass solar panel for marine research vessel">
+      <h3>Marine Research Vessel Panels</h3>
+      <p>Custom fiberglass solar modules built for autonomous marine research vehicles.</p>
+    </div>
 
-.nav .menu a:hover {
-  color: #1a4d7a;
-}
+    <div class="project-card">
+      <iframe 
+        src="https://www.youtube.com/embed/VIDEO_ID1" 
+        title="Autonomous Surface Vehicle" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+      <h3>Autonomous Surface Vehicle</h3>
+      <p>Lightweight panels fabricated for autonomous vehicles in offshore research missions.</p>
+    </div>
 
-/* ========================================
-   Hero Section with Image
-======================================== */
-#hero {
-  text-align: center;
-  padding: 100px 20px;
-  color: white;
-  background: url('images/hero.jpg') no-repeat center center;
-  background-size: cover;
-  position: relative;
-}
+    <div class="project-card">
+      <img src="images/project3.jpg" alt="Small batch solar panel production">
+      <h3>Small-Batch Manufacturing</h3>
+      <p>Panels produced in small runs for engineering teams and prototype energy systems.</p>
+    </div>
 
-#hero::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 0;
-}
+    <div class="project-card">
+      <iframe 
+        src="https://www.youtube.com/embed/VIDEO_ID2" 
+        title="Off-grid solar installation" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+      <h3>Off-Grid Systems</h3>
+      <p>Custom panel sizes designed for cabins, experimental platforms, and remote installations.</p>
+    </div>
 
-#hero h1,
-#hero p,
-#hero .button {
-  position: relative;
-  z-index: 1;
-}
+  </div>
+</section>
 
-#hero h1 {
-  font-size: 42px;
-  margin-bottom: 20px;
-  color: #fff;
-}
+<section id="specs">
+  <h2>Product Specifications</h2>
+  <p>High-performance fiberglass solar panels designed for marine, autonomous, and off-grid applications.</p>
 
-#hero p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
+  <div class="specs-grid">
+    <div class="spec-card">
+      <h3>Dimensions</h3>
+      <p>Custom sizes available; typical panels: 24" × 48" (0.6 × 1.2 m)</p>
+    </div>
 
-#hero .button {
-  background-color: #1a4d7a;
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 4px;
-  font-weight: 600;
-  transition: background 0.2s;
-}
+    <div class="spec-card">
+      <h3>Weight</h3>
+      <p>Lightweight construction: 5–8 lbs per panel depending on size</p>
+    </div>
 
-#hero .button:hover {
-  background-color: #144060;
-}
+    <div class="spec-card">
+      <h3>Material</h3>
+      <p>Fiberglass laminate with UV-resistant coating for durability</p>
+    </div>
 
-/* ========================================
-   Sections
-======================================== */
-section {
-  max-width: 1000px;
-  margin: 80px auto;
-  padding: 0 20px;
-}
+    <div class="spec-card">
+      <h3>Power Output</h3>
+      <p>15–50 W per panel, depending on size and cell configuration</p>
+    </div>
 
-section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #1a4d7a;
-}
+    <div class="spec-card">
+      <h3>Mounting</h3>
+      <p>Flexible options: deck mounts, brackets, or custom mounts for vehicles</p>
+    </div>
 
-section p {
-  margin-bottom: 20px;
-  font-size: 16px;
-}
+    <div class="spec-card">
+      <h3>Durability</h3>
+      <p>Saltwater-resistant, vibration-resistant, designed for long-term outdoor use</p>
+    </div>
+  </div>
+</section>
 
-/* ========================================
-   Projects Section
-======================================== */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
-.project-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 360px;
-}
+<footer>
+<p>© 2026 Sun Stitch</p>
+</footer>
 
-.project-card img,
-.project-card video,
-.project-card iframe {
-  width: 100%;
-  height: 260px;
-  object-fit: contain;
-  background-color: #f5f5f5;
-}
-
-.project-card h3 {
-  margin-top: 12px;
-  margin-bottom: 8px;
-  font-size: 20px;
-  color: #1a4d7a;
-}
-
-.project-card p {
-  font-size: 14px;
-  color: #444;
-  line-height: 1.5;
-}
-
-/* ========================================
-   Specs Section
-======================================== */
-.specs-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  margin-top: 30px;
-}
-
-.spec-card {
-  background-color: #f5f5f5;
-  padding: 20px;
-  border-radius: 6px;
-  text-align: center;
-}
-
-.spec-card h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #1a4d7a;
-}
-
-.spec-card p {
-  font-size: 14px;
-  color: #444;
-  line-height: 1.5;
-}
-
-/* ========================================
-   Contact Form
-======================================== */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
-}
-
-input, textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
-}
-
-button {
-  padding: 12px;
-  border: none;
-  border-radius: 4px;
-  background-color: #1a4d7a;
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-button:hover {
-  background-color: #144060;
-}
-
-/* ========================================
-   Footer
-======================================== */
-footer {
-  text-align: center;
-  padding: 30px 0;
-  background-color: #f5f5f5;
-  color: #555;
-  font-size: 14px;
-}
-
-/* ========================================
-   Responsive
-======================================== */
-@media (max-width: 800px) {
-  #hero h1 { font-size: 32px; }
-  #hero p { font-size: 16px; }
-  .projects-grid, .specs-grid { gap: 20px; }
-}
+</body>
+</html>
