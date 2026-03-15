@@ -1,68 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-    }
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .project-item {
-      background: #fff;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: transform 0.2s;
-    }
-    .project-item:hover {
-      transform: scale(1.03);
-    }
-    .project-item img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .project-item p {
-      margin: 10px;
-      font-weight: bold;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects | Ocean Solar Systems</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <h1>Projects</h1>
+<header>
 
-  <div class="projects-grid">
-    <!-- Add your projects here -->
-    <div class="project-item">
-      <img src="images/project1.jpg" alt="">
-      <p>Project 1</p>
-    </div>
-    <div class="project-item">
-      <img src="images/project2.jpg" alt="">
-      <p>Project 2</p>
-    </div>
-    <div class="project-item">
-      <img src="images/project3.jpg" alt="">
-      <p>Project 3</p>
-    </div>
-    <!-- Duplicate the above div for more projects -->
-  </div>
+<div class="nav">
+
+<a href="index.html" class="logo">
+<img src="images/logo.svg" alt="Ocean Solar Systems Logo">
+</a>
+
+<div class="menu">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="projects.html">Projects</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+</div>
+
+</div>
+
+</header>
+
+
+<section class="section">
+
+<h1>Selected Projects</h1>
+<p>Examples of custom fiberglass solar panels built for marine, research, and off-grid applications.</p>
+
+
+<div class="project">
+
+<img src="images/project1.jpg" alt="Custom fiberglass solar panel for marine vessel">
+
+<div class="project-text">
+<h2>Autonomous Marine Vehicle Panels</h2>
+<p>
+Lightweight fiberglass solar modules built for long-duration marine research vehicles. 
+Panels were designed to withstand saltwater exposure, vibration, and continuous outdoor use.
+</p>
+</div>
+
+</div>
+
+
+<div class="project">
+
+<img src="images/project2.jpg" alt="Solar panel installation on marine platform">
+
+<div class="project-text">
+<h2>Research Vessel Solar System</h2>
+<p>
+Custom panel sizes were produced to match the deck geometry of a 24-foot autonomous research vessel. 
+The modules provide reliable renewable power for onboard sensors and navigation systems.
+</p>
+</div>
+
+</div>
+
+
+<div class="project">
+
+<img src="images/project3.jpg" alt="Fiberglass solar panel manufacturing workshop">
+
+<div class="project-text">
+<h2>Small-Batch Engineering Production</h2>
+<p>
+Panels fabricated in small production runs for engineering teams and prototype systems. 
+Manufacturing emphasizes durability, consistent lamination, and lightweight construction.
+</p>
+</div>
+
+</div>
+
+
+<div class="project">
+
+<img src="images/project4.jpg" alt="Off grid solar installation">
+
+<div class="project-text">
+<h2>Off-Grid Energy Systems</h2>
+<p>
+Custom solar modules designed for cabins, experimental platforms, and remote power systems 
+where standard panels do not fit the available space.
+</p>
+</div>
+
+</div>
+
+
+</section>
+
+
+<footer>
+<p>© 2026 Ocean Solar Systems</p>
+</footer>
+
 
 </body>
 </html>
