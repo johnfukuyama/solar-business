@@ -3,93 +3,180 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ocean Solar Systems | Custom Fiberglass Solar Panels</title>
+<title>Ocean Solar Systems</title>
 <link rel="stylesheet" href="style.css">
 
-<!-- Organization + Service Schema -->
+<!-- Organization Schema for AI & SEO -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Ocean Solar Systems",
   "url": "https://yourdomain.com",
-  "logo": "https://yourdomain.com/images/logo.png",
-  "description": "Manufacturer of lightweight fiberglass solar panels for marine, autonomous, and off-grid applications.",
-  "sameAs": []
+  "logo": "https://yourdomain.com/images/logo.svg",
+  "description": "Manufacturer of lightweight fiberglass solar panels for marine, autonomous, and off-grid applications."
 }
 </script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Custom Fiberglass Solar Panel Fabrication",
-  "description": "We design and manufacture lightweight fiberglass solar panels for marine, autonomous vehicle, and off-grid applications. Each panel is custom-built to your project specifications.",
-  "provider": {
-    "@type": "Organization",
-    "name": "Ocean Solar Systems",
-    "url": "https://yourdomain.com"
-  },
-  "serviceType": "Custom Solar Panel Manufacturing",
-  "areaServed": {
-    "@type": "Country",
-    "name": "United States"
-  },
-  "url": "https://yourdomain.com/contact.html"
+<style>
+/* Basic Reset */
+body, h1, h2, p, a, img, input, textarea, button {
+  margin:0; padding:0; box-sizing:border-box;
+  font-family: Arial, sans-serif;
 }
-</script>
+body { color:#333; line-height:1.6; }
+
+/* Navigation */
+.nav{
+  display:flex; justify-content:space-between; align-items:center;
+  max-width:1200px; margin:auto; padding:20px;
+}
+.nav .logo img{ height:40px; width:auto; }
+.nav .menu a{
+  margin-left:20px; text-decoration:none; font-weight:600; color:#333;
+}
+.nav .menu a:hover{ color:#1a4d7a; }
+
+/* Hero */
+#hero{ text-align:center; padding:80px 20px; background:#f5f5f5; }
+#hero h1{ font-size:40px; margin-bottom:20px; color:#1a4d7a; }
+#hero p{ font-size:18px; margin-bottom:30px; }
+#hero .button{ background:#1a4d7a; color:white; padding:12px 25px; border-radius:4px; text-decoration:none; }
+
+/* Sections */
+section{ max-width:1000px; margin:80px auto; padding:0 20px; }
+section h2{ font-size:28px; margin-bottom:20px; color:#1a4d7a; }
+section p{ margin-bottom:20px; }
+
+/* Projects Grid */
+.projects-grid{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:30px;
+}
+.project-card img{
+  width:100%; height:200px; object-fit:cover; border-radius:6px;
+}
+.project-card h3{ margin-top:12px; margin-bottom:8px; font-size:20px; }
+.project-card p{ font-size:14px; color:#444; }
+
+/* Blog Grid */
+.blog-grid{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px;
+}
+.blog-card img{
+  width:100%; height:150px; object-fit:cover; border-radius:6px;
+}
+.blog-card h3{ margin-top:10px; margin-bottom:6px; font-size:18px; }
+.blog-card p{ font-size:14px; color:#444; }
+
+/* Contact Form */
+form{ display:flex; flex-direction:column; gap:15px; max-width:500px; }
+input, textarea{ padding:12px; border:1px solid #ccc; border-radius:4px; width:100%; }
+button{ padding:12px; border:none; border-radius:4px; background:#1a4d7a; color:white; font-weight:600; cursor:pointer; }
+button:hover{ background:#144060; }
+
+/* Footer */
+footer{ text-align:center; padding:30px; background:#f5f5f5; color:#555; }
+
+/* Responsive */
+@media (max-width:800px){
+  #hero h1{ font-size:32px; }
+  #hero p{ font-size:16px; }
+}
+</style>
 
 </head>
 <body>
 
-<div class="nav">
-  <div class="logo">Ocean Solar Systems</div>
-  <div class="menu">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-    <a href="blog.html">Blog</a>
+<!-- Navigation -->
+<header class="nav">
+<a href="#hero" class="logo"><img src="images/logo.svg" alt="Ocean Solar Systems Logo"></a>
+<div class="menu">
+  <a href="#hero">Home</a>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#blog">Insights</a>
+  <a href="#contact">Contact</a>
+</div>
+</header>
+
+<!-- Hero Section -->
+<section id="hero">
+  <h1>Ocean Solar Systems</h1>
+  <p>Custom fiberglass solar panels for marine, autonomous, and off-grid applications.</p>
+  <a href="#contact" class="button">Request a Quote</a>
+</section>
+
+<!-- About Section -->
+<section id="about">
+  <h2>About Us</h2>
+  <p>We specialize in lightweight, durable solar panels for marine vehicles, autonomous systems, and off-grid installations.  
+  Trusted supplier for Ocean Aero and other advanced projects.</p>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+  <h2>Our Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="images/project1.jpg" alt="Fiberglass solar panel for marine research vessel">
+      <h3>Marine Research Vessel Panels</h3>
+      <p>Custom fiberglass solar modules built for autonomous marine research vehicles.</p>
+    </div>
+    <div class="project-card">
+      <img src="images/project2.jpg" alt="Autonomous marine vehicle solar panels">
+      <h3>Autonomous Surface Vehicle</h3>
+      <p>Lightweight panels fabricated for autonomous vehicles in offshore research missions.</p>
+    </div>
+    <div class="project-card">
+      <img src="images/project3.jpg" alt="Small batch solar panel production">
+      <h3>Small-Batch Manufacturing</h3>
+      <p>Panels produced in small runs for engineering teams and prototype energy systems.</p>
+    </div>
+    <div class="project-card">
+      <img src="images/project4.jpg" alt="Off-grid solar installation">
+      <h3>Off-Grid Systems</h3>
+      <p>Custom panel sizes designed for cabins, experimental platforms, and remote installations.</p>
+    </div>
   </div>
-</div>
-
-
-<section class="hero">
-<h1>Solar Panels Built for the Real World</h1>
-<p>From boats to off-grid cabins, our fiberglass solar modules deliver lightweight, durable, and reliable power wherever you need it.</p>
-<a class="button" href="contact.html">Get a Custom Quote</a>
 </section>
 
-<section class="section">
-<h2>Our Expertise</h2>
-<div class="grid">
-<div class="card">
-<h3>Custom Panel Fabrication</h3>
-<p>Each panel is made to your exact specifications for size, weight, and shape.</p>
-</div>
-<div class="card">
-<h3>Marine & Autonomous Systems</h3>
-<p>Durable, waterproof panels built for challenging environments.</p>
-</div>
-<div class="card">
-<h3>Prototype & Small-Batch Production</h3>
-<p>Quick turnaround for engineering prototypes and small series builds.</p>
-</div>
-</div>
+<!-- Blog/Insights Section -->
+<section id="blog">
+  <h2>Insights & Tips</h2>
+  <div class="blog-grid">
+    <div class="blog-card">
+      <img src="images/blog1.jpg" alt="Fiberglass solar panel workshop">
+      <h3>Lightweight Panels for Marine Vehicles</h3>
+      <p>Learn how to fabricate durable fiberglass solar panels for research and autonomous projects.</p>
+    </div>
+    <div class="blog-card">
+      <img src="images/blog2.jpg" alt="Off-grid cabin solar panels">
+      <h3>Custom Panels for Cabins & Vans</h3>
+      <p>Explore how custom panels efficiently power off-grid cabins and mobile vehicles.</p>
+    </div>
+    <div class="blog-card">
+      <img src="images/blog3.jpg" alt="Waterproof solar panels">
+      <h3>Waterproof Solar Panel Tips</h3>
+      <p>Best practices for making solar panels waterproof and durable in outdoor conditions.</p>
+    </div>
+  </div>
 </section>
 
-<section class="section light">
-<h2>Applications</h2>
-<div class="grid">
-<div class="card">Autonomous Marine Vehicles</div>
-<div class="card">Off-Grid Cabins & Vans</div>
-<div class="card">Engineering Prototypes</div>
-<div class="card">Custom Renewable Projects</div>
-</div>
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 </section>
 
+<!-- Footer -->
 <footer>
 <p>© 2026 Ocean Solar Systems</p>
 </footer>
+
 </body>
 </html>
