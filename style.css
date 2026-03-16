@@ -1,243 +1,259 @@
-/* ========================================
-   Global Styles
-======================================== */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* GLOBAL */
+
+body{
+
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+color:#333;
+line-height:1.6;
+
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #fff;
+section{
+
+max-width:1100px;
+margin:auto;
+padding:80px 20px;
+
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+h1,h2{
+
+color:#222;
+
 }
 
-img, video, iframe {
-  border-radius: 6px;
-  display: block;
+h2{
+
+margin-bottom:25px;
+
 }
 
-/* ========================================
-   Navigation
-======================================== */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
+img{
+
+max-width:100%;
+display:block;
+
 }
 
-.nav .logo img {
-  height: 40px;
-  width: auto;
+
+
+/* NAVIGATION */
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 40px;
+
+border-bottom:1px solid #eee;
+
 }
 
-.nav .menu a {
-  margin-left: 20px;
-  font-weight: 600;
-  color: #333;
-  transition: color 0.2s;
+.logo img{
+
+height:90px;
+
 }
 
-.nav .menu a:hover {
-  color: #1a4d7a;
+.menu a{
+
+margin-left:25px;
+text-decoration:none;
+color:#333;
+font-weight:600;
+
 }
 
-/* ========================================
-   Hero Section
-======================================== */
-#hero {
-  text-align: center;
-  padding: 100px 20px;
-  color: white;
-  background: url('images/hero.jpg') no-repeat center center;
-  background-size: cover;
-  position: relative;
+.menu a:hover{
+
+color:#000;
+
 }
 
-#hero::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 0;
+
+
+/* HERO */
+
+#hero{
+
+text-align:center;
+padding:120px 20px;
+background:#f5f5f5;
+
 }
 
-#hero h1,
-#hero p,
-#hero .button {
-  position: relative;
-  z-index: 1;
+#hero h1{
+
+font-size:42px;
+margin-bottom:20px;
+
 }
 
-#hero h1 {
-  font-size: 42px;
-  margin-bottom: 20px;
+#hero p{
+
+max-width:650px;
+margin:auto;
+
 }
 
-#hero p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
 
-#hero .button {
-  background-color: #1a4d7a;
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 4px;
-  font-weight: 600;
-  transition: background 0.2s;
-}
 
-#hero .button:hover {
-  background-color: #144060;
-}
+/* PROJECTS */
 
-/* ========================================
-   Sections
-======================================== */
-section {
-  max-width: 1000px;
-  margin: 80px auto;
-  padding: 0 20px;
-}
+.projects-grid{
 
-section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #1a4d7a;
-}
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:40px;
 
-section p {
-  margin-bottom: 20px;
-  font-size: 16px;
-}
-
-/* ========================================
-   Projects Section
-======================================== */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.project-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 360px;
 }
 
 .project-card img,
-.project-card video,
-.project-card iframe {
-  width: 100%;
-  height: 260px;
-  object-fit: contain;
-  background-color: #f5f5f5;
+.project-card iframe{
+
+width:100%;
+height:260px;
+
+object-fit:contain;
+
+background:#f5f5f5;
+
 }
 
-.project-card h3 {
-  margin-top: 12px;
-  margin-bottom: 8px;
-  font-size: 20px;
-  color: #1a4d7a;
+.project-card h3{
+
+margin-top:15px;
+margin-bottom:10px;
+
 }
 
-.project-card p {
-  font-size: 14px;
-  color: #444;
-  line-height: 1.5;
+
+
+/* SPECS */
+
+.specs-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+
 }
 
-/* ========================================
-   Specs Section
-======================================== */
-.specs-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  margin-top: 30px;
+.spec-card{
+
+background:#f5f5f5;
+padding:25px;
+border-radius:6px;
+
 }
 
-.spec-card {
-  background-color: #f5f5f5;
-  padding: 20px;
-  border-radius: 6px;
-  text-align: center;
+.spec-card img{
+
+width:100%;
+height:140px;
+object-fit:cover;
+
+margin-bottom:15px;
+
 }
 
-.spec-card h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #1a4d7a;
+
+
+/* CONTACT */
+
+.contact-info{
+
+margin-bottom:30px;
+
 }
 
-.spec-card p {
-  font-size: 14px;
-  color: #444;
-  line-height: 1.5;
+.contact-info a{
+
+color:#000;
+font-weight:600;
+
 }
 
-/* ========================================
-   Contact Form
-======================================== */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
+form{
+
+max-width:500px;
+display:flex;
+flex-direction:column;
+gap:15px;
+
 }
 
-input, textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
+input, textarea{
+
+padding:12px;
+border:1px solid #ccc;
+border-radius:4px;
+
 }
 
-button {
-  padding: 12px;
-  border: none;
-  border-radius: 4px;
-  background-color: #1a4d7a;
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s;
+button{
+
+background:#222;
+color:white;
+
+padding:12px;
+border:none;
+border-radius:4px;
+
+cursor:pointer;
+
 }
 
-button:hover {
-  background-color: #144060;
+button:hover{
+
+background:#444;
+
 }
 
-/* ========================================
-   Footer
-======================================== */
-footer {
-  text-align: center;
-  padding: 30px 0;
-  background-color: #f5f5f5;
-  color: #555;
-  font-size: 14px;
+
+
+/* FOOTER */
+
+footer{
+
+text-align:center;
+padding:40px 20px;
+background:#f5f5f5;
+margin-top:80px;
+
 }
 
-/* ========================================
-   Responsive
-======================================== */
-@media (max-width: 800px) {
-  #hero h1 { font-size: 32px; }
-  #hero p { font-size: 16px; }
-  .projects-grid, .specs-grid { gap: 20px; }
+footer a{
+
+color:#000;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+nav{
+
+flex-direction:column;
+
+}
+
+.menu{
+
+margin-top:10px;
+
+}
+
+.menu a{
+
+margin:0 10px;
+
+}
+
 }
