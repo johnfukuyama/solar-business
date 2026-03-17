@@ -55,10 +55,10 @@ h2 {
   font-weight: 600;
 }
 
-/* LOGO SIZE ADJUSTMENT */
+/* LOGO SIZE */
 .navbar .logo img {
-  max-height: 60px; /* smaller logo */
-  width: auto;      /* maintain aspect ratio */
+  max-height: 60px;
+  width: auto;
 }
 
 /* HERO */
@@ -114,7 +114,7 @@ h2 {
   padding-left: 20px;
 }
 
-/* CASE STUDY */
+/* FEATURED PROJECT */
 .case-study-grid {
   display: flex;
   flex-wrap: wrap;
@@ -150,6 +150,39 @@ h2 {
 
 @media (max-width: 768px) {
   .case-study-grid {
+    flex-direction: column;
+  }
+}
+
+/* CAPABILITIES / TECHNICAL SPECS */
+.spec-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.spec-item {
+  flex: 1 1 300px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.spec-item h3 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.spec-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .spec-grid {
     flex-direction: column;
   }
 }
