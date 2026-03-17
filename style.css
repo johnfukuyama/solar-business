@@ -219,6 +219,19 @@ form button {
   border-radius: 6px;
 }
 
+/* TECHNICAL SPEC LIST STYLING */
+.spec-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.spec-list li {
+  margin-bottom: 6px;
+  font-size: 1rem;
+  color: #444;
+}
+
 /* FOOTER */
 footer {
   background: #222;
