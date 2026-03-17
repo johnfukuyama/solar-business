@@ -4,132 +4,264 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Sun Stitch | Technical Fabrication</title>
+
 <link rel="stylesheet" href="style.css">
+
+<!-- STRUCTURED DATA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Sun Stitch",
+  "url": "https://www.sun-stitch.com",
+  "logo": "https://www.sun-stitch.com/images/logo.svg",
+  "email": "info@sun-stitch.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "512 W California Ave Suite 208",
+    "addressLocality": "Vista",
+    "addressRegion": "CA",
+    "postalCode": "92083",
+    "addressCountry": "US"
+  },
+  "description": "Custom composite panels and technical fabric structures for marine, aerospace, and autonomous systems."
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Composite and Technical Fabric Fabrication",
+  "provider": {
+    "@type": "Organization",
+    "name": "Sun Stitch"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "description": "Fabrication of composite panels, stitched assemblies, and prototype structures for demanding environments."
+}
+</script>
+
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+<!-- NAV -->
 <nav class="navbar">
-  <div class="logo">
-    <img src="images/logo.svg" alt="Sun Stitch">
+  <div class="nav-container">
+    <div class="logo">
+      <img src="images/logo.svg" alt="Sun Stitch Logo">
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#specs">Specs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </div>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#specs">Specs</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
 </nav>
+
 
 <!-- HERO -->
 <section id="hero">
-  <h1>Sun Stitch</h1>
-  <p><strong>Precision-fabricated composite panels and technical fabrics for aerospace and marine autonomous vehicles — built to perform where others can’t.</strong></p>
+  <div class="hero-content">
+
+    <h1>Sun Stitch</h1>
+
+    <p class="hero-sub">
+      Custom composite panels and technical fabric structures for autonomous marine and aerospace systems — built for harsh environments and rapid prototyping.
+    </p>
+
+    <a href="#contact" class="cta-button">Request a Quote</a>
+
+  </div>
 </section>
+
 
 <!-- ABOUT -->
-<section id="about">
-  <h2>About</h2>
-  <p>
-    At Sun Stitch, we specialize in lightweight, high-strength composite panels and stitched technical fabrics designed for demanding marine and aerospace applications. Our proprietary fabrication techniques ensure precision, durability, and performance in real-world conditions.
-  </p>
+<section id="about" class="section">
+<h2>About</h2>
+
+<p>
+Sun Stitch specializes in precision fabrication of lightweight composite panels and technical fabric assemblies for demanding marine and aerospace applications. Our work supports autonomous vehicle platforms, research systems, and custom-engineered structures requiring durability and performance.
+</p>
+
 </section>
+
+
+<!-- WHO -->
+<section class="section">
+<h2>Who We Work With</h2>
+
+<ul class="simple-list">
+<li>Autonomous marine vehicle developers</li>
+<li>Aerospace and UAV teams</li>
+<li>Prototype engineering groups</li>
+<li>Custom fabrication projects</li>
+</ul>
+
+</section>
+
+
+<!-- WHY -->
+<section class="section">
+<h2>Why Choose Sun Stitch</h2>
+
+<ul class="simple-list">
+<li>Specialized composite and fabric expertise</li>
+<li>Fast prototype turnaround</li>
+<li>Built for real-world environments</li>
+<li>Hands-on fabrication approach</li>
+</ul>
+
+</section>
+
 
 <!-- PROJECTS -->
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="projects-grid">
+<section id="projects" class="section">
+<h2>Projects</h2>
 
-    <div class="project-card">
-      <img src="images/project1.jpg" alt="Composite Panels">
-      <h3>Composite Panel Fabrication</h3>
-      <p>Lightweight composite structures built for autonomous marine systems.</p>
-    </div>
+<div class="projects-grid">
 
-    <div class="project-card">
-      <img src="images/project2.jpg" alt="Fabric Structures">
-      <h3>Technical Fabric Assembly</h3>
-      <p>Custom stitched assemblies and structural fabric systems.</p>
-    </div>
+<div class="project-card">
+<img src="images/project1.jpg" alt="">
+<h3>Composite Panels</h3>
+<p>Lightweight structural panels for marine systems.</p>
+</div>
 
-    <div class="project-card">
-      <iframe src="https://www.youtube.com/embed/VIDEOID"
-        title="Project Video" frameborder="0" allowfullscreen></iframe>
-      <h3>Vehicle Demonstration</h3>
-      <p>Operational test footage of integrated composite systems.</p>
-    </div>
+<div class="project-card">
+<img src="images/project2.jpg" alt="">
+<h3>Fabric Assemblies</h3>
+<p>Precision-stitched technical materials.</p>
+</div>
 
-    <div class="project-card">
-      <img src="images/project3.jpg" alt="Prototype Build">
-      <h3>Prototype Fabrication</h3>
-      <p>Development builds and prototype structural components.</p>
-    </div>
+<div class="project-card">
+<img src="images/project3.jpg" alt="">
+<h3>Prototype Builds</h3>
+<p>Rapid development and iteration.</p>
+</div>
 
-  </div>
+<div class="project-card">
+<iframe src="https://www.youtube.com/embed/VIDEOID" frameborder="0" allowfullscreen></iframe>
+<h3>System Demo</h3>
+<p>Integrated platform testing.</p>
+</div>
+
+</div>
+
 </section>
+
+
+<!-- PROCESS -->
+<section class="section">
+<h2>Process</h2>
+
+<ol class="process-list">
+<li>Review your design or concept</li>
+<li>Select materials and fabrication method</li>
+<li>Build and refine prototype</li>
+<li>Deliver finished components</li>
+</ol>
+
+</section>
+
 
 <!-- SPECS -->
-<section id="specs">
-  <h2>Specifications</h2>
-  <div class="specs-grid">
+<section id="specs" class="section">
+<h2>Specifications</h2>
 
-    <div class="spec-card">
-      <img src="images/materials.jpg" alt="Materials">
-      <h3>Materials</h3>
-      <p>Technical fabrics, composite laminates, and marine-grade structural materials.</p>
-    </div>
+<div class="specs-grid">
 
-    <div class="spec-card">
-      <img src="images/applications.jpg" alt="Applications">
-      <h3>Applications</h3>
-      <p>Autonomous vehicles, marine platforms, aerospace systems, and custom structures.</p>
-    </div>
+<div class="spec-card">
+<img src="images/materials.jpg">
+<h3>Materials</h3>
+<p>Composite laminates, technical fabrics, marine-grade materials.</p>
+</div>
 
-    <div class="spec-card">
-      <img src="images/fabrication.jpg" alt="Fabrication">
-      <h3>Fabrication</h3>
-      <p>Precision cutting, stitching, composite integration, and structural assembly.</p>
-    </div>
+<div class="spec-card">
+<img src="images/fabrication.jpg">
+<h3>Fabrication</h3>
+<p>Precision cutting, stitching, bonding.</p>
+</div>
 
-    <div class="spec-card">
-      <img src="images/custombuilds.jpg" alt="Custom Builds">
-      <h3>Custom Builds</h3>
-      <p>Prototype development and small production fabrication.</p>
-    </div>
+<div class="spec-card">
+<img src="images/applications.jpg">
+<h3>Applications</h3>
+<p>Marine, aerospace, and autonomous systems.</p>
+</div>
 
-  </div>
+<div class="spec-card">
+<img src="images/custombuilds.jpg">
+<h3>Custom Builds</h3>
+<p>Prototypes and small production runs.</p>
+</div>
+
+</div>
+
 </section>
+
+
+<!-- CTA -->
+<section class="section">
+<h2>Start a Project</h2>
+
+<p>
+Send your drawings or concept — we’ll review and respond quickly.
+</p>
+
+<a href="#contact" class="cta-button">Start Your Project</a>
+
+</section>
+
 
 <!-- CONTACT -->
-<section id="contact">
-  <h2>Contact</h2>
-  <p>For project inquiries or collaboration opportunities:</p>
+<section id="contact" class="section">
 
-  <div class="contact-info">
-    <p><strong>Email:</strong> <a href="mailto:info@sun-stitch.com">info@sun-stitch.com</a></p>
-    <p><strong>Address:</strong><br>
-      512 W California Ave Suite 208<br>
-      Vista, CA 92083
-    </p>
-  </div>
+<h2>Contact</h2>
 
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-    <input type="text" name="name" placeholder="Name" required>
-    <input type="email" name="_replyto" placeholder="Email" required>
-    <textarea name="message" rows="5" placeholder="Message" required></textarea>
-    <button type="submit">Send</button>
-  </form>
+<p><strong>We typically respond within 24 hours.</strong></p>
+
+<div class="contact-info">
+<p><strong>Email:</strong> <a href="mailto:info@sun-stitch.com">info@sun-stitch.com</a></p>
+
+<p><strong>Address:</strong><br>
+512 W California Ave Suite 208<br>
+Vista, CA 92083
+</p>
+</div>
+
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+<input type="text" name="name" placeholder="Name" required>
+
+<input type="email" name="_replyto" placeholder="Email" required>
+
+<textarea name="message" placeholder="Project details" required></textarea>
+
+<button type="submit">Send</button>
+
+</form>
+
 </section>
+
 
 <!-- FOOTER -->
 <footer>
-  <p><strong>Sun Stitch</strong></p>
-  <p>512 W California Ave Suite 208, Vista, CA 92083</p>
-  <p><a href="mailto:info@sun-stitch.com">info@sun-stitch.com</a></p>
-  <p>Delivering precision-fabricated panels and composites built to perform in the most demanding environments.</p>
-  <p>© 2026 Sun Stitch</p>
+
+<p><strong>Sun Stitch</strong></p>
+
+<p>Vista, California</p>
+
+<p><a href="mailto:info@sun-stitch.com">info@sun-stitch.com</a></p>
+
+<p>© 2026 Sun Stitch</p>
+
 </footer>
 
 </body>
