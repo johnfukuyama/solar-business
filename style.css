@@ -63,7 +63,7 @@ h2 {
 
 /* HERO */
 .hero-section {
-  height: 80vh;
+  height: 50vh; /* reduced from 80vh */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,6 +84,8 @@ h2 {
   position: relative;
   z-index: 1;
   color: #fff;
+  max-width: 900px; /* prevents text from stretching too wide */
+  padding: 0 20px;
 }
 
 .hero-sub {
