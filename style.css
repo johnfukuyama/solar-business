@@ -194,6 +194,47 @@ h2 {
   margin-bottom: 12px;
 }
 
+/* CASE STUDY SECTION */
+.case-study-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.case-study-image, .case-study-content {
+  flex: 1 1 400px;
+}
+
+.case-study-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.case-study-content h3 {
+  margin-top: 15px;
+  font-size: 1.25rem;
+  color: #222;
+}
+
+.case-study-content ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.case-study-content ul li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .case-study-grid {
+    flex-direction: column;
+  }
+}
+
 /* CONTACT FORM */
 form {
   max-width: 600px;
