@@ -232,6 +232,24 @@ form button {
   color: #444;
 }
 
+/* TWO-COLUMN TECHNICAL SPECS */
+.specs-two-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.specs-two-column > div {
+  flex: 1 1 400px;
+}
+
+@media (max-width: 768px) {
+  .specs-two-column {
+    flex-direction: column;
+  }
+}
+
 /* FOOTER */
 footer {
   background: #222;
